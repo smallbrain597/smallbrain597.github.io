@@ -9,6 +9,10 @@
         display: block;
         margin: 0 auto;
       }
+
+      #restartButton {
+        display: none; /* Initially hide the button */
+      }
     </style>
   </head>
   <body>
@@ -38,6 +42,8 @@
       var snake = [{ x: 200, y: 200 }];
       var food = { x: 0, y: 0 };
       var direction = "right";
+      var gameInterval;
+      var isGameOver = false;
 
       // Generate random food
       function generateFood() {
@@ -50,12 +56,15 @@
         snake = [{ x: 200, y: 200 }]; // Reset the snake position
         generateFood(); // Generate new food
         direction = "right"; // Reset the direction
+        isGameOver = false; // Reset the game over flag
         gameInterval = setInterval(gameLoop, 100); // Restart the game interval
+        document.getElementById("restartButton").style.display = "none"; // Hide the restart button
       }
 
       function gameOver() {
         clearInterval(gameInterval);
-        alert("Game Over");
+        isGameOver = true; // Set the game over flag to true
+        document.getElementById("restartButton").style.display = "block"; // Show the restart button
       }
 
       // Game loop
@@ -136,7 +145,7 @@
 
       // Start the game
       generateFood();
-      var gameInterval = setInterval(gameLoop, 100);
+      gameInterval = setInterval(gameLoop, 100);
     </script>
 
     <section id="boxes">
