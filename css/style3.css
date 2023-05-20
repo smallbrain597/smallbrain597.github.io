@@ -1,0 +1,131 @@
+body {
+    font: 15px/1 'Courier New', Courier, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: rgb(151, 194, 231);
+ }
+ 
+ /* Global */
+ .container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+ }
+ 
+ ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ header {
+    background: #5e4f51;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(51, 47, 47) 3px solid;
+ }
+ 
+ header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 16px;
+ }
+ 
+ header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+ }
+ 
+ header #branding {
+    float: left;
+ }
+ 
+ header #branding h1 {
+    margin: 5px;
+ }
+ 
+ header nav {
+    float: right;
+    margin-top: 15px;
+ }
+ 
+ header .highlight,
+ header .current a {
+    color: #3e83eb;
+    font-weight: bold;
+ }
+ 
+ header a:hover {
+    color: #1d0303;
+    font-weight: bold;
+ }
+ 
+ /* showcase */
+ #showcase {
+    min-height: 400px;
+    background: url('../imgs/background.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 100px 0;
+ }
+ 
+ #showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+ }
+ 
+ #showcase p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+ }
+ 
+ #newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #b38c8f;
+ }
+ 
+ #newsletter h1 {
+    text-align: center;
+    color: #364966;
+ }
+ 
+ #boxes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ #boxes .box {
+    flex: 0 0 30%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+ }
+ 
+ #boxes .box:hover {
+    transform: translateY(-5px);
+ }
+ 
+ #boxes .box img {
+    width: 90px;
+ }
+ 
+ #boxes .box h3 {
+    margin: 10px 0;
+ }
+ 
+ #boxes .box p {
+    color: rgb(151, 194, 231);
+ }
+ 
